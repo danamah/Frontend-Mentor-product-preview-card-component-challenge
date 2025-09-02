@@ -1,0 +1,160 @@
+body{
+    background-color: #f2ebe3;
+}
+div.container{
+    width: 80%;
+    margin-inline: auto;
+    position: relative;
+    margin-top: 50px;
+    padding-block: 20px;
+}
+div.container div.card {
+    margin-inline: auto;
+    width: 600px;
+    height: 450px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+@media screen and (max-width:768px) {
+   
+    div.container div.card{
+        flex-direction: column;
+        width: 370px;
+        height: 750px;
+        margin-inline: auto;
+    }
+}
+div.container div.card .image-desktop{
+ width: 55%;
+ height: 100%;
+}
+div.container div.card .image-mobile{
+    display: none;
+}
+
+div.container div.card .image-desktop img{
+    max-width: 100%;
+    display: block;
+    height: 100%;
+}
+
+h2,h1,p{
+    margin-block: 18px;
+}
+div.container div.card .text {
+  width: 40%;
+  margin-left: 10px;
+  padding: 30px 10px;  
+}
+div.container div.card .text h2 {
+    font-family: "Montserrat", sans-serif;
+    color:rgb(108, 114, 137);
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 3.5px;
+}
+div.container div.card .text h1 {
+    font-family: "Fraunces", serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    color: rgb(28, 35, 43);
+}
+div.container div.card .text p:nth-child(3) {
+    font-family: "Montserrat", sans-serif;
+    color:rgb(108, 114, 137);
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 14px;
+}
+div.container div.card .text .prices{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: -35px;
+}
+div.container div.card .text .prices p:first-child{
+    font-family: "Fraunces", serif;
+    color: rgb(60, 128, 103);
+    font-size: 32px;
+    font-weight: 700;
+}
+div.container div.card .text .prices p:nth-child(2){
+    color:rgb(108, 114, 137);
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    position: relative;
+}
+div.container div.card .text .prices p:nth-child(2)::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: rgb(108, 114, 137);
+    top: 7px;
+    left: -2px;
+    right: -2px;
+}
+div.container div.card .text button {
+    display: block;
+    margin-left: 0px;
+    font-family: "Montserrat", sans-serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(60, 128, 103);
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    padding: 15px 55px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+div.container div.card .text button:hover{
+    background-color: rgb(44, 100, 79);
+}
+
+@media screen and (max-width:768px) {
+    div.container div.card .image-desktop {
+        display: none;
+    }
+    div.container div.card .image-mobile {
+        display: block;
+        /* width: 100%; */
+        object-fit: contain;
+    }
+    div.container div.card .image-mobile img{
+        width: 100%;
+       
+    }
+    div.container div.card .text{
+        width: 100%;
+        padding-top: 15px;
+        padding-inline: 10px;
+        padding-bottom:20px ;
+        text-align: center;
+    }
+    div.container div.card .text button {
+        margin-inline: auto;
+    }
+    div.container div.card .text h1,
+    div.container div.card .text p:first-of-type{
+        padding: 10px;
+    }
+    h2,h1,p{
+        margin-block: 5px;
+    }
+    
+}
